@@ -399,9 +399,10 @@ public class BTree implements Serializable{
         System.out.println("height:  " + st.height());
         System.out.println(st);
         System.out.println();
-
-        st.store("test/index");
-        BTreeStore bst = st.getStoreTree("test/index");
+        //
+        String filedir="D:/workspace/git/BTree/index";
+        st.store(filedir);
+        BTreeStore bst = st.getStoreTree(filedir);
 
         System.out.println(" 8:  " + bst.get(8));
         System.out.println(" 6:  " + bst.get(6));
